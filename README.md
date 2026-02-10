@@ -1,64 +1,43 @@
-# DIY Conveyor Model Documentation
-
-## Chapter IV: Realizarea Standului Experimental
+# DIY Conveyor Model 
 
 ### Technical Details about the Experimental Setup
 
 The experimental setup for the DIY conveyor model involves various components that are essential for its operation. Below are the details:
 
 #### Components:
-1. **Conveyor Belt:** 
-   - Type: [Specify conveyor belt type]
-   - Dimensions: [Specify dimensions]
-   - Material: [Specify material]
+1. **Conveyor Belt** 
 
-2. **Motor:** 
-   - Type: [Specify motor type]
-   - Voltage: [Specify voltage]
-   - Power: [Specify power specifications]
+2. **DC motor** ![motor-dc-3v-6v-cu-reductor-148](https://github.com/user-attachments/assets/5ebdd629-2776-4db5-8d7f-4f61d13bdda6)
 
-3. **Arduino Board:**
-   - Model: [Specify Arduino model]
-   - Number of pins: [Specify number of pins used]
    
-4. **Power Supply:**
-   - Voltage: [Specify voltage]
-   - Current Rating: [Specify current rating]
+3. **Arduino Uno:**![Arduino316](https://github.com/user-attachments/assets/536e712e-e18c-4997-afcd-94961fa880cc)
 
-5. **Sensors:**
-   - Type: [Specify sensor types]
-   - Function: [Specify what sensors are used for]
+   
+4. **Lithium-Ion batteries 18650B x3:**
+   - Voltage: 3.7v
+   - Capacity: 8800 mAh
+   - ![acumulatori](https://github.com/user-attachments/assets/24b130ba-4fbb-4649-a1fe-4ba94cb568ec)
+
+
+5. **L298N module**
+   - For controlling the direction and speed of the motor
+   - ![l298n](https://github.com/user-attachments/assets/12b517ef-a345-4735-bc90-b62db60e401f)
+
+
+6. **10k potentiometer**
+   - For controlling speed of the motor![potentiometru-10k](https://github.com/user-attachments/assets/10132241-6c42-4fa5-b8d7-7c3af12dc7d6)
+
+   
+7. **Hall sensors x2**
+   - For controlling direction of the conveyor![senzor-hall-magnetic](https://github.com/user-attachments/assets/adfa3dd8-6c8e-4f5a-b927-34fa17a515c6)
+
 
 ### Block Diagram
+![Picture1](https://github.com/user-attachments/assets/a6cc258f-d315-48d1-81fc-8e05f1e9c264)
 
-![Block Diagram](link_to_block_diagram_image)
 
-### Arduino Code Implementation
+### Final prototype![FullSizeRender](https://github.com/user-attachments/assets/477df3ba-54cc-426b-8db3-5f7139f4a830)
 
-Here is a sample implementation of the Arduino code used to control the conveyor model:
-
-```cpp
-// Arduino code for controlling conveyor model
-
-#define MOTOR_PIN 9
-#define SENSOR_PIN 2
-
-void setup() {
-   pinMode(MOTOR_PIN, OUTPUT);
-   pinMode(SENSOR_PIN, INPUT);
-}
-
-void loop() {
-   // Read sensor
-   if (digitalRead(SENSOR_PIN) == HIGH) {
-      digitalWrite(MOTOR_PIN, HIGH);  // Start motor
-   } else {
-      digitalWrite(MOTOR_PIN, LOW);   // Stop motor  
-   }
-}
-```
-
-This code initializes the motor and sensor pins, then enters a loop where it checks the sensor's status to control the motor operation based on real-time feedback. 
 
 ### Conclusion
 
