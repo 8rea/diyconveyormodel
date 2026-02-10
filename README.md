@@ -22,21 +22,25 @@ https://www.aliexpress.com/item/1005010116249936.html?spm=a2g0o.detail.pcDetailT
 5. **Lithium-Ion batteries 18650B x3 in series:**
    - Voltage: 3.7V x3=~11V
    - Capacity: 8800 mAh
+   
  ![acumulatori](https://github.com/user-attachments/assets/24b130ba-4fbb-4649-a1fe-4ba94cb568ec)
 
 
 7. **L298N module**
    - For controlling the direction and speed of the motor
+     
     ![l298n](https://github.com/user-attachments/assets/12b517ef-a345-4735-bc90-b62db60e401f)
 
 
 8. **10k potentiometer**
    - For controlling speed of the motor
+     
      ![potentiometru-10k](https://github.com/user-attachments/assets/10132241-6c42-4fa5-b8d7-7c3af12dc7d6)
 
    
 9. **Hall sensors x2**
    - For controlling direction of the conveyor
+     
      ![senzor-hall-magnetic](https://github.com/user-attachments/assets/adfa3dd8-6c8e-4f5a-b927-34fa17a515c6)
 
 
